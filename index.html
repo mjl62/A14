@@ -33,7 +33,14 @@
 </style>
 
 <script>
+    
     let ck = document.cookie;
-    alert(ck);
-    document.cookie = "This is a cookie;"
+    if (ck == "") {
+        let name = prompt("What's your name?","Name");
+        document.cookie(name);
+    }
+    else {
+        alert("Welcome back, " + ck + "!");
+    }
+    
 </script>
