@@ -35,8 +35,8 @@
 <script>
     
     let ck = document.cookie;
-    if (ck == null || ck == "") {
-        let name = prompt("What's your name?","");
+    if (ck == null && ck == "") {
+        let name = prompt("What is your name?","");
         document.cookie(name);
     }
     else {
